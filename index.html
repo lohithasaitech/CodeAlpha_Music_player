@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="music-player">
+
+    <h1>Music Player</h1>
+
+    <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=800&auto=format&fit=crop"
+      alt="Music Image"
+      class="song-image">
+
+    <h2 id="song-title">Sample Song</h2>
+    <p id="artist-name">Unknown Artist</p>
+
+    <audio id="audio">
+      <source src="song.mp3" type="audio/mp3">
+    </audio>
+
+    <input type="range" id="progress" value="0">
+
+    <div class="controls">
+
+      <button onclick="previousSong()">⏮</button>
+
+      <button id="play-btn" onclick="playPauseSong()">▶</button>
+
+      <button onclick="nextSong()">⏭</button>
+
+    </div>
+
+    <div class="volume-section">
+
+      <label>Volume</label>
+
+      <input type="range" id="volume" min="0" max="1" step="0.1" value="1">
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
