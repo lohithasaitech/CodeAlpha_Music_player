@@ -38,3 +38,7 @@ music-player/
 ## Author
 
 Developed for internship task submission.
+
+##  Explore my Website 
+
+https://lohithasaitech.github.io/CodeAlpha_Music_player/
